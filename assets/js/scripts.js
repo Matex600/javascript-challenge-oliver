@@ -1,5 +1,7 @@
 let calculateBtn = document.getElementById('calculate');
 
+
+
 calculate.addEventListener('click', function(){
     let initialCharge = document.getElementById('speaker').value;
     let percentageCommision = document.getElementById('percentage-commision').value;

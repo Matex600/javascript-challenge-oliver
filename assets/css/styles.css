@@ -195,6 +195,11 @@ button:hover {
     background: #666;
 }
 
+span.currency {
+    float: left;
+    
+}
+
 /* Speaker media query */
 
 @media (min-width: 568px) 
