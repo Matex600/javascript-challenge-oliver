@@ -54,7 +54,7 @@
         </div>
         <div class="item">
           <p>Speakers Available</p>
-          <select>
+          <select id="speaker" onchange="initialCharge();">
             <option value="100">John Smith</option>
             <option value="120">Michael Forest</option>
             <option value="140">Charlie Ernest</option>
@@ -78,15 +78,19 @@
           <input type="tel" name="name" />
         </div>
         <div class="item">
-          <p>Contact Address</p>
-          <input type="text" name="name" placeholder="Street address" />
-          <input type="text" name="name" placeholder="Street address line 2" />
-          <div class="city-item">
-            <input type="text" name="name" placeholder="City" />
-            <input type="text" name="name" placeholder="Postal / Zip code" />
-          </div>
+          <p>Commission:</p>
+          <input id="percentage-commision" type="number" readonly value="10">
+        </div>
+        <div class="item">
+          <p>Organiser Commission:</p>
+          <input id="commission-amount" type="number">
+        </div>
+        <div class="item">
+          <p>Final Charge:</p>
+           <input id="final-charge" type="number">
         </div>
         <div class="btn-block">
+          <button type="button" id="calculate">Calculate</button>
           <button type="submit" href="/">Submit</button>
         </div>
       </form>
